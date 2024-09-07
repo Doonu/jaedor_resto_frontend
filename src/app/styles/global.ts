@@ -15,14 +15,14 @@ export const GlobalStyles = createGlobalStyle`
             position: absolute;
             width: 10px;
             left: 0;
+            background: ${({ theme }) => theme.core.primaryBackground};
         }
 
         &::-webkit-scrollbar-thumb {
             border-radius: 24px;
+            background: ${({ theme }) => theme.core.secondaryBackground};
         }
 
-        &::-webkit-scrollbar-track {
-        }
     }
 
     .ant-modal-mask, .ant-drawer-mask {

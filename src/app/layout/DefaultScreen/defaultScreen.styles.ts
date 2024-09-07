@@ -10,9 +10,10 @@ export const SLayout = styled(Layout)`
 export const SWrapper = styled.div`
   display: grid;
   justify-items: center;
-  height: max-content;
+  height: 100%;
   padding: 16px;
   background-color: inherit;
+  width: 100%;
 
   @media (max-width: ${({ theme }) => theme.breakpoints.maxTablets}) {
     padding: 10px;
@@ -31,6 +32,7 @@ export const SContainer = styled.div`
   display: flex;
   flex: 1;
   width: 100%;
+  height: 100%;
   border-radius: 16px;
   overflow: hidden;
 `;

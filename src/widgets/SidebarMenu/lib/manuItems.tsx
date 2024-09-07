@@ -1,11 +1,17 @@
 import { Designer, Exit, Home, Mail, Notification, Sale, Settings } from '@shared/assets';
+import { ERoutes } from '@shared/model';
 import { MenuItemType } from 'antd/es/menu/interface';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export const getMenuItems = (): MenuItemType[] => [
   {
-    key: 'home',
-    icon: <Home />,
+    key: 'orders',
+    icon: (
+      <Link to={ERoutes.HOME_PAGE}>
+        <Home />
+      </Link>
+    ),
   },
   {
     key: 'sale',
@@ -21,7 +27,11 @@ export const getMenuItems = (): MenuItemType[] => [
   },
   {
     key: 'notification',
-    icon: <Notification />,
+    icon: (
+      <Link to={ERoutes.NOTIFICATION_PAGE}>
+        <Notification />
+      </Link>
+    ),
   },
   {
     key: 'settings',
