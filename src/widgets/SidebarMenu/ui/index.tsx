@@ -1,0 +1,18 @@
+import React from 'react';
+
+import { SMenu, SMenuItem, SSidebar } from './sidebar.styles';
+import { getMenuItems } from '../lib/manuItems';
+
+export const SidebarMenu = () => {
+  const menuItems = getMenuItems();
+
+  return (
+    <SSidebar>
+      <SMenu defaultSelectedKeys={['sale']}>
+        {menuItems.map(({ key, icon }) => (
+          <SMenuItem key={key} icon={icon} />
+        ))}
+      </SMenu>
+    </SSidebar>
+  );
+};
