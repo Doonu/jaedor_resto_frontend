@@ -1,13 +1,11 @@
 import NotFoundPage from '@pages/NotFoundPage';
+import NotificationPage from '@pages/NotificationPage';
+import { ProductsPage } from '@pages/ProductsPage';
 import { SidebarProvider } from '@shared/hooks';
 import { ERoutes } from '@shared/model';
-import React, { lazy } from 'react';
 import { createBrowserRouter } from 'react-router-dom';
 
 import { RightSidebarScreen } from '../layout/RightSidebarScreen';
-
-const OrdersPageLazy = lazy(() => import('../../pages/OrdersPage'));
-const NotificationPageLazy = lazy(() => import('../../pages/NotificationPage'));
 
 export const publicRoutes = createBrowserRouter([
   {
@@ -21,9 +19,9 @@ export const publicRoutes = createBrowserRouter([
     children: [
       {
         path: ERoutes.HOME_PAGE,
-        element: <OrdersPageLazy />,
+        element: <ProductsPage />,
       },
-      { path: ERoutes.NOTIFICATION_PAGE, element: <NotificationPageLazy /> },
+      { path: ERoutes.NOTIFICATION_PAGE, element: <NotificationPage /> },
     ],
   },
 ]);

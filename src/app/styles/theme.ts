@@ -17,7 +17,7 @@ const colors: DefaultTheme['colors'] = {
   base: {
     base0: '#FFFFFF',
     base50: '#F4F4F5',
-    base100: '#E0E0E2',
+    base100: '#ABBBC2',
     base200: '#C4C5C8',
     base300: '#9B9DA3',
     base400: '#75767D',
@@ -48,6 +48,7 @@ const core: DefaultTheme['core'] = {
   secondaryBackground: colors.base.base950,
   surface: colors.base.base700,
   colorTextPrimary: colors.base.base0,
+  colorTextSecondary: colors.base.base100,
   active: colors.brandOrange.primary,
 };
 
@@ -57,6 +58,24 @@ export const scConfig: DefaultTheme = {
   button: {
     background: colors.brandOrange.orange300,
     color: core.colorTextPrimary,
+  },
+  input: {
+    background: colors.base.base800,
+    backgroundHover: core.primaryBackground,
+    borderColor: colors.base.base700,
+    colorTextPlaceholder: colors.base.base100,
+    colorTextPrimary: core.colorTextPrimary,
+  },
+  tabs: {
+    colorActive: core.active,
+    colorTextPrimary: core.colorTextPrimary,
+    colorBorderSecondary: core.surface,
+  },
+  select: {
+    background: core.surface,
+    secondaryBackground: core.secondaryBackground,
+    colorTextPrimary: core.colorTextPrimary,
+    optionSelectedBg: core.primaryBackground,
   },
   borderRadius: {
     roundedNon: '0px',

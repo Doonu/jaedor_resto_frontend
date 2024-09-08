@@ -49,6 +49,29 @@ declare module 'styled-components' {
       surface: string;
       colorTextPrimary: string;
       active: string;
+      colorTextSecondary: string;
+    };
+    input: {
+      background: string;
+      backgroundHover: string;
+      borderColor: string;
+      colorTextPlaceholder: string;
+      colorTextPrimary: string;
+    };
+    button: {
+      background: string;
+      color: string;
+    };
+    select: {
+      background: string;
+      secondaryBackground: string;
+      colorTextPrimary: string;
+      optionSelectedBg: string;
+    };
+    tabs: {
+      colorActive: string;
+      colorTextPrimary: string;
+      colorBorderSecondary: string;
     };
     borderRadius: {
       roundedNon: string;

@@ -1,7 +1,7 @@
 import { useSidebarLocation } from '@shared/hooks';
 import { useEffect } from 'react';
 
-export const useSidebarOrders = () => {
+export const useSidebarNotification = () => {
   const { setSidebarProps, isOpenDetails, onToggleOpenDetails } = useSidebarLocation();
 
   useEffect(() => {

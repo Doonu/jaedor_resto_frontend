@@ -1,6 +1,6 @@
 import { GlobalStyles } from '@app/styles';
 import dayjs from 'dayjs';
-import ru from 'dayjs/locale/ru';
+import en from 'dayjs/locale/en';
 import timezone from 'dayjs/plugin/timezone';
 import utc from 'dayjs/plugin/utc';
 import { FC, PropsWithChildren } from 'react';
@@ -11,7 +11,7 @@ import WithQueryClient from './WithQueryClient';
 import WithStore from './WithStore';
 import WithTheme from './WithTheme';
 
-dayjs.locale(ru);
+dayjs.locale(en);
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
