@@ -31,6 +31,7 @@ declare module 'styled-components' {
         base1000: string;
       };
       redErrors: {
+        redError0: string;
         redErrors50: string;
         redErrors100: string;
         redErrors200: string;
@@ -50,6 +51,7 @@ declare module 'styled-components' {
       colorTextPrimary: string;
       active: string;
       colorTextSecondary: string;
+      accent: string;
     };
     input: {
       background: string;

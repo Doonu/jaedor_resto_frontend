@@ -7,3 +7,4 @@ export * from './Designer';
 export * from './Notification';
 export * from './Logo';
 export * from './Search';
+export * from './Delete';

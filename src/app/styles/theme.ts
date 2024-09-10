@@ -30,6 +30,7 @@ const colors: DefaultTheme['colors'] = {
     base1000: '#111118',
   },
   redErrors: {
+    redError0: '#FF7CA3',
     redErrors50: '#FFECEB',
     redErrors100: '#FFC8C4',
     redErrors200: '#FFA399',
@@ -50,6 +51,7 @@ const core: DefaultTheme['core'] = {
   colorTextPrimary: colors.base.base0,
   colorTextSecondary: colors.base.base100,
   active: colors.brandOrange.primary,
+  accent: colors.redErrors.redError0,
 };
 
 export const scConfig: DefaultTheme = {

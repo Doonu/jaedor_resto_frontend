@@ -1,11 +1,16 @@
-import { useSidebarOrders, FilterOrdersList, ProductListDetails } from '@entities/products';
+import {
+  useSidebarOrders,
+  FilterOrdersList,
+  ProductListDetails,
+  IProduct,
+} from '@entities/products';
 import { faker } from '@faker-js/faker';
 import { useState } from 'react';
 
 import Navigate from './Navigate';
 import { SList, SPage } from './productsPage.styles';
 
-const items = [
+const items: IProduct[] = [
   {
     id: 1,
     title: 'Spicy seasoned seafood noodles',

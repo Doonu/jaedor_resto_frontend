@@ -1,4 +1,4 @@
-import Search from '@shared/assets/svg/Search';
+import { Search } from '@shared/assets';
 import dayjs from 'dayjs';
 import React from 'react';
 

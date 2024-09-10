@@ -29,6 +29,13 @@ export const antdTheme: ThemeConfig = {
       colorText: scConfig.input.colorTextPrimary,
       controlHeight: 48,
     },
+    Button: {
+      controlHeight: 48,
+      colorBgContainer: scConfig.core.secondaryBackground,
+      colorBorder: scConfig.core.active,
+      defaultHoverBorderColor: scConfig.core.accent,
+      colorPrimaryHover: 'yellow',
+    },
     Tabs: {
       itemSelectedColor: scConfig.tabs.colorActive,
       colorText: scConfig.tabs.colorTextPrimary,

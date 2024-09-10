@@ -4,7 +4,7 @@ interface SvgBoxProps extends SVGProps<SVGSVGElement> {
   color?: string | undefined;
 }
 
-const Search: FC<SvgBoxProps> = ({ color = '#F F5533', ...props }) => (
+export const Search: FC<SvgBoxProps> = ({ color = '#F F5533', ...props }) => (
   <svg
     {...props}
     width="20"
@@ -32,5 +32,3 @@ const Search: FC<SvgBoxProps> = ({ color = '#F F5533', ...props }) => (
     </g>
   </svg>
 );
-
-export default Search;

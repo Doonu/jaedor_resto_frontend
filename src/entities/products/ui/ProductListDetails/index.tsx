@@ -1,4 +1,4 @@
-import { IProductOrders } from '@entities/products';
+import { IProduct } from '@entities/products';
 import React, { FC } from 'react';
 
 import {
@@ -11,7 +11,7 @@ import {
   SProductListDetails,
 } from './productListDetails.styles';
 
-export const ProductListDetails: FC<IProductOrders> = (product) => (
+export const ProductListDetails: FC<IProduct> = (product) => (
   <SProductListDetails>
     <SIconContainer>
       <SIcon src={product.src} alt="" />
