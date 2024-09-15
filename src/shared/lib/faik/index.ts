@@ -1,1 +1,1 @@
-export const faik = (str: string) => `faik ${str}`;
+export const faik = (str: string): string => `faik ${str}`;

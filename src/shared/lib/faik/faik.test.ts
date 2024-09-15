@@ -1,4 +1,4 @@
-import { faik } from './index';
+import { faik } from '.';
 
 describe('faik', () => {
   test('test', () => {

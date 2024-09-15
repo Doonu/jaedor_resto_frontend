@@ -6,7 +6,9 @@ const config: Config = {
   testEnvironment: 'jsdom',
   moduleDirectories: ['node_modules'],
   rootDir: '../../',
-  testMatch: ['<rootDir>src/**/*(*.)@(spec|test).{tj]s?(x)})'],
+  moduleFileExtensions: ['ts', 'tsx'],
+  modulePaths: ['<rootDir>/src'],
+  setupFilesAfterEnv: ['<rootDir>config/jest/setupTests.ts'],
 };
 
 export default config;

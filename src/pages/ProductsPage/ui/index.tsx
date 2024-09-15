@@ -1,11 +1,4 @@
-import {
-  useSidebarOrders,
-  FilterOrdersList,
-  ProductListDetails,
-  IProduct,
-} from '@entities/products';
-import { faker } from '@faker-js/faker';
-import { useState } from 'react';
+import { useSidebarOrders, FilterProductsList, ProductCard, IProduct } from '@entities/products';
 
 import Navigate from './Navigate';
 import { SList, SPage } from './productsPage.styles';
@@ -98,17 +91,15 @@ const items: IProduct[] = [
 ];
 
 const ProductsPage = () => {
-  const { isOpenDetails, onToggleOpenDetails } = useSidebarOrders();
-
-  const [data, setData] = useState(() => Array.from({ length: 1200 }, faker.commerce.product));
+  useSidebarOrders();
 
   return (
     <SPage>
       <Navigate />
-      <FilterOrdersList />
+      <FilterProductsList />
       <SList>
         {items.map((product) => (
-          <ProductListDetails key={product.id} {...product} />
+          <ProductCard key={product.id} {...product} />
         ))}
       </SList>
     </SPage>

@@ -8,11 +8,11 @@ import {
   SContent,
   SPrice,
   SCount,
-  SProductListDetails,
-} from './productListDetails.styles';
+  SProductCard,
+} from './productCard.styles';
 
-export const ProductListDetails: FC<IProduct> = (product) => (
-  <SProductListDetails>
+export const ProductCard: FC<IProduct> = (product) => (
+  <SProductCard>
     <SIconContainer>
       <SIcon src={product.src} alt="" />
     </SIconContainer>
@@ -21,5 +21,5 @@ export const ProductListDetails: FC<IProduct> = (product) => (
       <SPrice>${product.price}</SPrice>
       <SCount> {product.count} Bowls available</SCount>
     </SContent>
-  </SProductListDetails>
+  </SProductCard>
 );

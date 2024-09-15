@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 
 import { SMenu, SMenuItem, SSidebar } from './sidebar.styles';
 import { getMenuItems } from '../lib/manuItems';

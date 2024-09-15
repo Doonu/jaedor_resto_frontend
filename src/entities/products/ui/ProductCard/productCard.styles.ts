@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const SProductListDetails = styled.div`
+export const SProductCard = styled.div`
   height: 225px;
   background: ${({ theme }) => theme.core.surface};
   border-radius: 16px;

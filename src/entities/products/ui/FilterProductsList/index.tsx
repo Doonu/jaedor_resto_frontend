@@ -3,7 +3,7 @@ import { Tabs } from 'antd';
 import { TabsProps } from 'antd/es/tabs';
 import React from 'react';
 
-export const FilterOrdersList = () => {
+export const FilterProductsList = () => {
   const items: TabsProps['items'] = [
     {
       key: '1',

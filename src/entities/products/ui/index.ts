@@ -1,3 +1,3 @@
 export * from './FilterProductsList';
-export * from './ProductListDetails';
+export * from './ProductCard';
 export * from './SortProductList';

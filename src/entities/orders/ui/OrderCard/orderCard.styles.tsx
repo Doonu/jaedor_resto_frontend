@@ -1,6 +1,6 @@
-import { th } from '@faker-js/faker';
 import { Delete } from '@shared/assets';
-import { Button, Typography } from 'antd';
+import { ButtonIcon } from '@shared/ui';
+import { Typography } from 'antd';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -67,7 +67,7 @@ export const STotalPrice = styled.div`
   font-size: 16px;
 `;
 
-export const SButton = styled(Button).attrs({ icon: <Delete /> })`
+export const SButton = styled(ButtonIcon).attrs({ icon: <Delete /> })`
   width: 48px;
 `;
 

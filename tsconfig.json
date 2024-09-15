@@ -5,6 +5,7 @@
     "module": "ESNext",
     "target": "es5",
     "jsx": "react-jsx",
+    "strict": true,
     "allowJs": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
@@ -15,5 +16,8 @@
       "module": "CommonJS"
     }
   },
+  "include": [
+    "./config/jest/setupTests.ts"
+  ],
   "extends": "./tsconfig.paths.json"
 }
